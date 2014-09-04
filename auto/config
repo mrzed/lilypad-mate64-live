@@ -1,0 +1,20 @@
+#!/bin/sh
+
+set -e
+
+lb config noauto \
+      --architectures amd64 \
+      --linux-flavours amd64 \
+      --distribution jessie \
+      --mirror-bootstrap http://ftp.us.debian.org/debian/ \
+      --mirror-binary http://http.debian.net/debian \
+      --archive-areas "main contrib non-free" \
+      --apt-indices false \
+      --bootappend-live "boot=live components quiet splash vga=current" \
+      --iso-application lily-amd64-mate-v0.9a1 \
+      --iso-preparer zed \
+      --iso-publisher lilypadmudlib.com \
+      --iso-volume lily-mate64-v0.9a1 \
+      --debian-installer-distribution daily \
+      --debian-installer live \
+	"${@}"

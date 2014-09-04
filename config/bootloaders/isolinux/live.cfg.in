@@ -1,0 +1,12 @@
+label live-@FLAVOUR@
+	menu label ^Lilypad Linux Live (@FLAVOUR@)
+	menu default
+	linux @LINUX@
+	initrd @INITRD@
+	append file=/preseed.cfg @APPEND_LIVE@
+
+label live-@FLAVOUR@-failsafe
+	menu label ^Lilypad Linux Live (@FLAVOUR@ failsafe)
+	linux @LINUX@
+	initrd @INITRD@
+	append @APPEND_LIVE_FAILSAFE@

@@ -1,0 +1,1 @@
+tasksel desktop-base sudo lightdm mate-desktop-environment-core update-notifier synaptic pidgin openssh-server ssh qupzilla
