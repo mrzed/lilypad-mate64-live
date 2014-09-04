@@ -5,6 +5,6 @@ Distribution: jessie
 Mirror-Bootstrap: http://ftp.us.debian.org/debian/
 
 [FIXME]
-Configuration-Version: 4.0~alpha39-1
+Configuration-Version: 4.0.1-1
 Name: lilypad-mate64
 Type: iso-hybrid
